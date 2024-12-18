@@ -14,7 +14,7 @@ GitHub Pages Action with GPG verify
 
 This is a adjusted version of [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages), you can refer to the original repository documentation.
 
-Here I will describe my yml file to deploy it with GPG verify.
+Here I will describe my yml file to deploy it with GPG verify, combining with [crazy-max/ghaction-import-gpg](https://github.com/crazy-max/ghaction-import-gpg).
 
 
 ```yaml
