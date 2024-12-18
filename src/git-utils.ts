@@ -201,9 +201,9 @@ export function getCommitMessage(
 export async function commit(allowEmptyCommit: boolean, msg: string): Promise<void> {
   try {
     if (allowEmptyCommit) {
-      await exec.exec('git', ['commit', '--allow-empty', '-m', `${msg}`]);
+      await exec.exec('git', ['commit', '--allow-empty', '-S', '-m', `${msg}`]);
     } else {
-      await exec.exec('git', ['commit', '-m', `${msg}`]);
+      await exec.exec('git', ['commit', '-S', '-m', `${msg}`]);
     }
   } catch (error) {
     if (error instanceof Error) {
